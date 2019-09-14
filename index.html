@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .header{
+            background-color: black;
+            height: 60px;
+        }
+        h2{
+           color: white; 
+           padding-top: 15px;
+           padding-left: 15px;
+        }
+        .sidearea{
+            width:60px;
+            height: 304px;
+            background-color: #424242;
+            padding:10px;
+            float: left;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: yellow;
+            text-decoration-line: underline;
+        }
+        .textarea{
+            float: left;
+            width: 700px;
+            min-height: 500px;
+        }
+        .clear{
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+       <div class="header"><h2>Review Analysis System</h2></div><br>
+       <div class="sidearea"><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="contact.html">Contact</a></div>
+       <div class="textarea">
+           <form action="cgi-bin/predict.py">
+           <textarea placeholder="Enter Your Review" name="rev" cols="197" rows="21"></textarea>
+           <input type="submit">
+           </form>
+        </div>
+       <div class="clear"></div>
+</body>
+</html>
